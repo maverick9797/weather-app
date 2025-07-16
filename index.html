@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search">
+        <input type="text" placeholder="search city" spellcheck="false" />
+        <button>search</button>
+      </div>
+      <div class="hiden">
+        <div class="error">
+          <p>city not found</p>
+        </div>
+
+        <div class="date">
+          <h id="currentDate">24 December,2024</h>
+        </div>
+
+        <div class="weatherImg">
+          <div class="weather">
+            <img
+              src="https://openweathermap.org/img/wn/02d@2x.png"
+              class="clouds"
+            />
+            <h1 class="temp"></h1>
+            <h2 class="city">auburn</h2>
+          </div>
+
+          <div class="other-details">
+            <div class="text">
+              <div class="detail">
+                <i class="fa-solid fa-droplet"></i>
+                <span id="humidity"></span>
+                <p>Humidity</p>
+              </div>
+
+              <div class="detail">
+                <div class="speed">
+                  <i class="fa-solid fa-wind"></i>
+                  <span id="wind_speed"></span>
+                  <p>wind speed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pre">
+            <div class="detail">
+              <i class="fa-solid fa-gauge"></i>
+              <span id="pressure"></span>
+              <p>Pressure</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
